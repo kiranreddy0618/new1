@@ -1,0 +1,59 @@
+@model WebApplication14.Context.Training
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Training</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Previously_employed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Previously_employed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Training_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Training_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingExpirence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingExpirence)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingPeriod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingPeriod)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
